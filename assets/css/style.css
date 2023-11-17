@@ -479,7 +479,6 @@ section .container {
   transition: ease-in-out 0.3s;
 }
 
-
 .interests .icon-box i {
   font-size: 32px;
   padding-right: 10px;
@@ -498,6 +497,39 @@ section .container {
 .interests .icon-box:hover {
   background: #042b56eb;
 }
+
+/*--------------------------------------------------------------
+# Education
+--------------------------------------------------------------*/
+.education .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #09203a;
+  transition: ease-in-out 0.3s;
+}
+
+
+.education .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.education .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.education .icon-box:hover {
+  background: #042b56eb;
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials
