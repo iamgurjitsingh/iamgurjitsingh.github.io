@@ -1,11 +1,16 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   position: relative;
   background: transparent;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -17,6 +22,7 @@ body::before {
   right: 0;
   top: 0;
   height: 100vh;
+  z-index: -2;
 }
 
 @media (min-width: 1024px) {
@@ -42,13 +48,13 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  transition: ease-in-out 0s;
+  transition: ease-in-out 0.3s;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   z-index: 997;
-  overflow-y: auto;
+  overflow: visible;
 }
 
 #header * {
@@ -262,61 +268,24 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/* Header Top */
-#header.header-top {
-  height: 90px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  background: #09203a;
-}
-
-#header.header-top .social-links, #header.header-top h2 {
-  display: none;
-}
-
-#header.header-top h1 {
-  margin-right: auto;
-  font-size: 36px;
-}
-
-#header.header-top .container {
-  display: flex;
-  align-items: center;
-}
-
-#header.header-top .nav-menu {
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  #header.header-top {
-    height: 60px;
-  }
-  #header.header-top h1 {
-    font-size: 26px;
-  }
-}
+/* Header Top - Removed to fix scrolling */
+/* Header is now always visible and sections flow normally */
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  overflow: hidden;
-  position: absolute;
+  overflow: visible;
+  position: relative;
   width: 100%;
-  top: 140px;
-  bottom: 100%;
-  opacity: 0;
+  opacity: 1;
   z-index: 2;
+  padding: 60px 0;
 }
 
 section.section-show {
-  top: 70px;
-  bottom: auto;
   opacity: 1;
-  padding-bottom: 0px;
+  padding-bottom: 60px;
 }
 
 section .container {
@@ -326,10 +295,7 @@ section .container {
 
 @media (max-width: 768px) {
   section {
-    top: 120px;
-  }
-  section.section-show {
-    top: 80px;
+    padding: 40px 0;
   }
 }
 

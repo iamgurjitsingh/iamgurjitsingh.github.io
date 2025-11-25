@@ -42,8 +42,14 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
 
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Futuristic Enhancements CSS -->
+  <link href="assets/css/futuristic.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,12 +58,23 @@
                     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Theme Toggle Button -->
+  <div class="theme-toggle" id="themeToggle">
+    <i class="bx bx-moon" id="themeIcon"></i>
+  </div>
+
+  <!-- Cursor Trail Effect -->
+  <div class="cursor-trail"></div>
+
   <!-- ======= Header ======= -->
   <header id="header" class="header-tops">
     <div class="container">
-      <h1><a href="index.html">Gurjit Singh</a></h1>
-      <h2 style="color:#fff">I'm <span class="typing" style="color:#FDCD57"></span></h2>
-      <nav class="nav-menu d-none d-lg-block">
+      <h1 data-aos="fade-down" data-aos-duration="1500"><a href="index.html" class="gradient-text">Gurjit Singh</a></h1>
+      <h2 style="color:#fff" data-aos="fade-up" data-aos-delay="200">I'm <span class="typing neon-glow" style="color:#FDCD57"></span></h2>
+      <nav class="nav-menu d-none d-lg-block" data-aos="fade-down" data-aos-delay="400">
         <ul>
           <li class="active"><a href="#header"> <span>Home</span></a></li>
           <li><a href="#about"><span>About Me</span></a></li>
@@ -67,11 +84,14 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <div class="social-links">
-          <a href="https://www.linkedin.com/in/iamgurjitsingh" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://www.github.com/iamgurjitsingh" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          <a href="mailto:gurjit.singh.dev@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+      <div class="social-links" data-aos="fade-up" data-aos-delay="600">
+          <a href="https://www.linkedin.com/in/iamgurjitsingh" target="_blank" class="linkedin" data-aos="zoom-in" data-aos-delay="700"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.github.com/iamgurjitsingh" target="_blank" class="github" data-aos="zoom-in" data-aos-delay="800"><i class="bx bxl-github"></i></a>
+          <a href="mailto:gurjit.singh.dev@gmail.com" target="_blank" class="google" data-aos="zoom-in" data-aos-delay="900"><i class="bx bxl-google"></i></a>
       </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator"></div>
 
     </div>
   </header><!-- End Header -->
@@ -88,10 +108,10 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/profile.jpeg" class="img-fluid" alt="">
+        <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1000">
+          <img src="assets/img/profile.jpeg" class="img-fluid profile-img-enhanced" alt="">
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-duration="1000">
           <p>
             I am a skilled Website Developer and Database Administrator with expertise in a diverse range of web-based applications. My proficiency extends to PHP, Zend, Magento, and MySQL-based applications. With an unwavering passion for exploring new technologies, I strive to stay at the forefront of the ever-evolving tech landscape.
             <br/><br/>
@@ -119,8 +139,8 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-12 col-md-8">
-          <div class="icon-box">
+        <div class="col-lg-12 col-md-8" data-aos="fade-up" data-aos-duration="1000">
+          <div class="icon-box card-3d">
             <div class="text-box">
               <h3>Guru Nanak Dev University, Amritsar</h3>
               <p>Bachelor of Computer Science (IT), Information Technology</p>
@@ -139,50 +159,50 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
+        <div class="col-lg-3 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box card-3d">
             <i class="ri-global-line" style="color: #ffbb2c;"></i>
             <h3>Software Development</h3>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box card-3d">
             <i class="ri-tools-line" style="color: #28a745;"></i>
             <h3>AI Tools</h3>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box card-3d">
             <i class="ri-cloud-line" style="color: #17a2b8;"></i>
             <h3>Kubernetes</h3>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box card-3d">
             <i class="ri-boxing-line" style="color: #2496ed;"></i>
             <h3>Docker</h3>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
+        <div class="col-lg-3 col-md-4 mt-4" data-aos="zoom-in" data-aos-delay="500">
+          <div class="icon-box card-3d">
             <i class="ri-git-merge-line" style="color: #f1081f;"></i>
             <h3>CI/CD</h3>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
+        <div class="col-lg-3 col-md-4 mt-4" data-aos="zoom-in" data-aos-delay="600">
+          <div class="icon-box card-3d">
             <i class="ri-file-list-3-line" style="color: #47aeff;"></i>
             <h3>Algorithms</h3>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
+        <div class="col-lg-3 col-md-4 mt-4" data-aos="zoom-in" data-aos-delay="700">
+          <div class="icon-box card-3d">
             <i class="ri-terminal-box-line" style="color: #2496ed;"></i>
             <h3>Shell/Bash</h3>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
+        <div class="col-lg-3 col-md-4 mt-4" data-aos="zoom-in" data-aos-delay="800">
+          <div class="icon-box card-3d">
             <i class="ri-database-2-line" style="color: #5578ff;"></i>
             <h3>Machine Learning</h3>
           </div>
@@ -198,26 +218,26 @@
 
       <div class="row">
 
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
+        <div class="col-lg-3 col-md-4" data-aos="flip-left" data-aos-delay="100">
+          <div class="icon-box card-3d">
             <i class="ri-translate" style="color: #ffbb2c;"></i>
             <h3>English</h3>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0" data-aos="flip-left" data-aos-delay="200">
+          <div class="icon-box card-3d">
             <i class="ri-translate" style="color: #28a745;"></i>
             <h3>Hindi</h3>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0" data-aos="flip-left" data-aos-delay="300">
+          <div class="icon-box card-3d">
             <i class="ri-translate" style="color: #17a2b8;"></i>
             <h3>Punjabi</h3>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0" data-aos="flip-left" data-aos-delay="400">
+          <div class="icon-box card-3d">
             <i class="ri-translate" style="color: #2496ed;"></i>
             <h3>Deutsch (German)</h3>
           </div>
@@ -373,6 +393,81 @@
       <div class="section-title">
         <h2>Skills Showcase</h2>
       </div>
+
+      <!-- Interactive Skill Progress Bars -->
+      <div class="skills-progress" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skill-item">
+              <span class="skill-name">PHP & Backend Development</span>
+              <div class="progress-bar-wrapper">
+                <div class="progress-bar" data-progress="95">
+                  <span class="progress-value">95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript & Frontend</span>
+              <div class="progress-bar-wrapper">
+                <div class="progress-bar" data-progress="90">
+                  <span class="progress-value">90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Docker & Kubernetes</span>
+              <div class="progress-bar-wrapper">
+                <div class="progress-bar" data-progress="88">
+                  <span class="progress-value">88%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Database Management</span>
+              <div class="progress-bar-wrapper">
+                <div class="progress-bar" data-progress="92">
+                  <span class="progress-value">92%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="skill-item">
+              <span class="skill-name">Cloud Computing (GCP/AWS)</span>
+              <div class="progress-bar-wrapper">
+                <div class="progress-bar" data-progress="85">
+                  <span class="progress-value">85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Laravel & Symfony</span>
+              <div class="progress-bar-wrapper">
+                <div class="progress-bar" data-progress="93">
+                  <span class="progress-value">93%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">E-commerce (Magento/Shopify)</span>
+              <div class="progress-bar-wrapper">
+                <div class="progress-bar" data-progress="87">
+                  <span class="progress-value">87%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CI/CD & DevOps</span>
+              <div class="progress-bar-wrapper">
+                <div class="progress-bar" data-progress="86">
+                  <span class="progress-value">86%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-lg-12" data-aos="fade-up">
           <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
@@ -429,7 +524,7 @@
       </div>
 
       <div class="row mt-2">
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+        <div class="col-md-6 mt-4 d-flex align-items-stretch" data-aos="fade-right" data-aos-duration="1000">
           <div class="info-box">
             <i class="bx bx-share-alt"></i>
             <h3>Social Profiles</h3>
@@ -441,7 +536,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+        <div class="col-md-6 mt-4 d-flex align-items-stretch" data-aos="fade-left" data-aos-duration="1000">
           <div class="info-box">
             <i class="bx bx-envelope"></i>
             <h3>Email Address</h3>
@@ -464,6 +559,12 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <!-- Particles.js for animated background -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
       strings: [
@@ -490,6 +591,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Futuristic Enhancements JS -->
+  <script src="assets/js/futuristic.js"></script>
 
 </body>
 </html>
