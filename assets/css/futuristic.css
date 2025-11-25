@@ -589,6 +589,160 @@ img {
   font-size: 16px;
 }
 
+/* Experience Section */
+.experience {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.experience .section-title {
+  margin-bottom: 40px;
+}
+
+.experience-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  margin-bottom: 25px;
+  border-left: 4px solid #FDCD57;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.experience-item:hover {
+  border-left-width: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(5px);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.company-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.company-name {
+  color: #FDCD57;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.job-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.total-duration {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.duration-location {
+  text-align: right;
+  min-width: 200px;
+}
+
+.duration {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.location {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.experience-description {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.experience-description p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Multiple roles within same company */
+.experience-role {
+  padding-left: 20px;
+  margin-top: 20px;
+  border-left: 2px solid rgba(253, 205, 87, 0.3);
+}
+
+.experience-role:first-child {
+  margin-top: 15px;
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.experience-role .job-title {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.experience-role .experience-description {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 10px;
+}
+
+/* Responsive Design for Experience Section */
+@media (max-width: 768px) {
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .duration-location {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .role-header {
+    flex-direction: column;
+  }
+
+  .role-header .duration-location {
+    margin-top: 5px;
+  }
+
+  .company-name {
+    font-size: 20px;
+  }
+
+  .job-title {
+    font-size: 16px;
+  }
+
+  .experience-role {
+    padding-left: 15px;
+  }
+}
+
 /* Section Background Patterns */
 section {
   position: relative;
