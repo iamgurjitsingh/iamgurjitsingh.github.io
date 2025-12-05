@@ -53,6 +53,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Speedtest Tracker Open Source Project Page -->
+  <url>
+    <loc>https://iamgurjitsingh.github.io/projects/speedtest-tracker.html</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- ML Project Page -->
   <url>
     <loc>https://iamgurjitsingh.github.io/projects/ml.html</loc>
