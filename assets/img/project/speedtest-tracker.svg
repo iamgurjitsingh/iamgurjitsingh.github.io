@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1e3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1629;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="speedGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF1493;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF69B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFB6C1;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FF1493;stop-opacity:0.8" />
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#FF1493" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <path d="M0,0 L800,0 L800,600 L0,600 Z" fill="none" stroke="#FF69B4" stroke-width="1"/>
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#FF69B4" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#FF69B4" stroke-width="0.5"/>
+    <line x1="0" y1="450" x2="800" y2="450" stroke="#FF69B4" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="600" stroke="#FF69B4" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="600" stroke="#FF69B4" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="600" stroke="#FF69B4" stroke-width="0.5"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="60" fill="none" stroke="url(#speedGradient)" stroke-width="2" opacity="0.3" filter="url(#glow)"/>
+  <circle cx="700" cy="500" r="80" fill="none" stroke="url(#speedGradient)" stroke-width="2" opacity="0.3" filter="url(#glow)"/>
+
+  <!-- Main speedometer circle -->
+  <g transform="translate(400, 280)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="180" fill="none" stroke="url(#speedGradient)" stroke-width="4" opacity="0.5" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="160" fill="none" stroke="#FF1493" stroke-width="2" opacity="0.3"/>
+
+    <!-- Speed arc background -->
+    <path d="M -120,-120 A 170,170 0 1,1 120,-120"
+          fill="none"
+          stroke="rgba(255,105,180,0.2)"
+          stroke-width="25"
+          stroke-linecap="round"/>
+
+    <!-- Speed arc progress -->
+    <path d="M -120,-120 A 170,170 0 0,1 0,-170"
+          fill="none"
+          stroke="url(#speedGradient)"
+          stroke-width="25"
+          stroke-linecap="round"
+          filter="url(#glow)">
+      <animate attributeName="stroke-dasharray"
+               from="0,1000"
+               to="267,1000"
+               dur="2s"
+               fill="freeze"/>
+    </path>
+
+    <!-- Center circle -->
+    <circle cx="0" cy="0" r="100" fill="rgba(26,30,62,0.9)" stroke="url(#speedGradient)" stroke-width="3" filter="url(#shadow)"/>
+
+    <!-- Speed value -->
+    <text x="0" y="-20"
+          font-family="'Segoe UI', Arial, sans-serif"
+          font-size="48"
+          font-weight="bold"
+          fill="url(#speedGradient)"
+          text-anchor="middle"
+          filter="url(#glow)">607</text>
+
+    <text x="0" y="15"
+          font-family="'Segoe UI', Arial, sans-serif"
+          font-size="24"
+          fill="#FF69B4"
+          text-anchor="middle">Mbps</text>
+
+    <!-- Download/Upload indicators -->
+    <g transform="translate(-35, 45)">
+      <!-- Download arrow -->
+      <path d="M 0,0 L 0,20 M -5,15 L 0,20 L 5,15"
+            stroke="#00D9FF"
+            stroke-width="2"
+            fill="none"
+            stroke-linecap="round"/>
+      <text x="10" y="15"
+            font-family="'Segoe UI', Arial, sans-serif"
+            font-size="14"
+            fill="#00D9FF">Down</text>
+    </g>
+
+    <g transform="translate(15, 45)">
+      <!-- Upload arrow -->
+      <path d="M 0,20 L 0,0 M -5,5 L 0,0 L 5,5"
+            stroke="#FF1493"
+            stroke-width="2"
+            fill="none"
+            stroke-linecap="round"/>
+      <text x="10" y="15"
+            font-family="'Segoe UI', Arial, sans-serif"
+            font-size="14"
+            fill="#FF1493">Up</text>
+    </g>
+
+    <!-- Needle -->
+    <g transform="rotate(-60)">
+      <path d="M 0,-5 L 120,0 L 0,5 Z"
+            fill="url(#speedGradient)"
+            filter="url(#glow)"/>
+      <circle cx="0" cy="0" r="8" fill="#FF1493" filter="url(#glow)"/>
+    </g>
+
+    <!-- Speed markers -->
+    <g opacity="0.6">
+      <line x1="-150" y1="0" x2="-135" y2="0" stroke="#FF69B4" stroke-width="2"/>
+      <line x1="150" y1="0" x2="135" y2="0" stroke="#FF69B4" stroke-width="2"/>
+      <line x1="0" y1="-150" x2="0" y2="-135" stroke="#FF69B4" stroke-width="2"/>
+      <line x1="0" y1="150" x2="0" y2="135" stroke="#FF69B4" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="80"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="42"
+        font-weight="bold"
+        fill="url(#speedGradient)"
+        text-anchor="middle"
+        filter="url(#glow)">SPEEDTEST TRACKER</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="110"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="18"
+        fill="#B0B0B0"
+        text-anchor="middle">Open Source Contribution</text>
+
+  <!-- Stats boxes -->
+  <g transform="translate(100, 480)">
+    <rect x="0" y="0" width="150" height="80" rx="10"
+          fill="rgba(255,105,180,0.1)"
+          stroke="url(#speedGradient)"
+          stroke-width="2"/>
+    <text x="75" y="30"
+          font-family="'Segoe UI', Arial, sans-serif"
+          font-size="24"
+          font-weight="bold"
+          fill="#FF69B4"
+          text-anchor="middle">24/7</text>
+    <text x="75" y="55"
+          font-family="'Segoe UI', Arial, sans-serif"
+          font-size="14"
+          fill="#B0B0B0"
+          text-anchor="middle">Monitoring</text>
+  </g>
+
+  <g transform="translate(325, 480)">
+    <rect x="0" y="0" width="150" height="80" rx="10"
+          fill="rgba(255,105,180,0.1)"
+          stroke="url(#speedGradient)"
+          stroke-width="2"/>
+    <text x="75" y="30"
+          font-family="'Segoe UI', Arial, sans-serif"
+          font-size="24"
+          font-weight="bold"
+          fill="#FF69B4"
+          text-anchor="middle">📊</text>
+    <text x="75" y="55"
+          font-family="'Segoe UI', Arial, sans-serif"
+          font-size="14"
+          fill="#B0B0B0"
+          text-anchor="middle">Analytics</text>
+  </g>
+
+  <g transform="translate(550, 480)">
+    <rect x="0" y="0" width="150" height="80" rx="10"
+          fill="rgba(255,105,180,0.1)"
+          stroke="url(#speedGradient)"
+          stroke-width="2"/>
+    <text x="75" y="30"
+          font-family="'Segoe UI', Arial, sans-serif"
+          font-size="24"
+          font-weight="bold"
+          fill="#FF69B4"
+          text-anchor="middle">🚀</text>
+    <text x="75" y="55"
+          font-family="'Segoe UI', Arial, sans-serif"
+          font-size="14"
+          fill="#B0B0B0"
+          text-anchor="middle">Performance</text>
+  </g>
+
+  <!-- Animated dots -->
+  <circle cx="150" cy="200" r="4" fill="#FF1493" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="250" r="4" fill="#00D9FF" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="450" r="4" fill="#FF69B4" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Network waves -->
+  <g opacity="0.4" transform="translate(50, 300)">
+    <path d="M 0,0 Q 25,-20 50,0" stroke="#00D9FF" stroke-width="2" fill="none">
+      <animate attributeName="d"
+               values="M 0,0 Q 25,-20 50,0;M 0,0 Q 25,20 50,0;M 0,0 Q 25,-20 50,0"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </path>
+    <path d="M 0,0 Q 25,-30 50,0" stroke="#00D9FF" stroke-width="1.5" fill="none" opacity="0.6">
+      <animate attributeName="d"
+               values="M 0,0 Q 25,-30 50,0;M 0,0 Q 25,30 50,0;M 0,0 Q 25,-30 50,0"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
+
