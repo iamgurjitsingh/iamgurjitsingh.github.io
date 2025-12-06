@@ -181,26 +181,35 @@
       transform: scale(1.1);
     }
 
-    .btn-primary-custom {
+    .btn-custom {
       background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      border: none;
-      padding: 15px 40px;
-      border-radius: 30px;
-      font-weight: 600;
-      font-size: 1.05rem;
-      transition: all 0.3s ease;
       color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       gap: 10px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: none;
       margin: 10px;
-      letter-spacing: -0.01em;
+      font-size: 1rem;
     }
 
-    .btn-primary-custom:hover {
+    .btn-custom:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(255, 20, 147, 0.5);
+      box-shadow: 0 10px 30px rgba(255, 20, 147, 0.4);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: linear-gradient(135deg, #9333EA, #C084FC);
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      box-shadow: 0 10px 30px rgba(147, 51, 234, 0.4);
       color: white;
     }
 
@@ -362,20 +371,24 @@
 
       <div class="contribution-stats">
         <div class="stat-item">
-          <span class="stat-number">🎯</span>
-          <div class="stat-label">Active Contributor</div>
+          <span class="stat-number">11.6k</span>
+          <div class="stat-label">⭐ GitHub Stars</div>
         </div>
         <div class="stat-item">
-          <span class="stat-number">🚀</span>
-          <div class="stat-label">Performance Focus</div>
+          <span class="stat-number">578</span>
+          <div class="stat-label">🍴 Forks</div>
         </div>
         <div class="stat-item">
-          <span class="stat-number">🛠️</span>
-          <div class="stat-label">Bug Fixes</div>
+          <span class="stat-number">715</span>
+          <div class="stat-label">📝 Commits</div>
         </div>
         <div class="stat-item">
-          <span class="stat-number">✨</span>
-          <div class="stat-label">Feature Enhancement</div>
+          <span class="stat-number">32</span>
+          <div class="stat-label">👥 Contributors</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">39</span>
+          <div class="stat-label">👁️ Watching</div>
         </div>
       </div>
     </div>
@@ -386,16 +399,17 @@
         <span>Technologies Used</span>
       </div>
       <div class="text-center" style="margin-top: 20px;">
+        <span class="tech-badge">Svelte</span>
+        <span class="tech-badge">TypeScript</span>
         <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">SCSS</span>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">Dockerfile</span>
         <span class="tech-badge">WebAssembly</span>
         <span class="tech-badge">FFmpeg</span>
-        <span class="tech-badge">React</span>
-        <span class="tech-badge">TypeScript</span>
-        <span class="tech-badge">Node.js</span>
-        <span class="tech-badge">File API</span>
-        <span class="tech-badge">Web Workers</span>
-        <span class="tech-badge">Canvas API</span>
-        <span class="tech-badge">Open Source</span>
+        <span class="tech-badge">Docker</span>
+        <span class="tech-badge">AGPL-3.0 License</span>
       </div>
     </div>
 
@@ -405,11 +419,14 @@
         <span>Project Links</span>
       </div>
       <div style="margin-top: 30px;">
-        <a href="https://vert.sh/?source=https://iamgurjitsingh.github.io" target="_blank" class="btn-primary-custom">
-          <i class='bx bx-globe'></i> Visit VERT
-        </a>
-        <a href="https://github.com/VERT-sh/VERT/?source=https://iamgurjitsingh.github.io" target="_blank" class="btn-primary-custom">
+        <a href="https://github.com/VERT-sh/VERT/?source=https://iamgurjitsingh.github.io" target="_blank" class="btn-custom">
           <i class='bx bxl-github'></i> View on GitHub
+        </a>
+        <a href="https://vert.sh/?source=https://iamgurjitsingh.github.io" target="_blank" class="btn-custom btn-secondary">
+          <i class='bx bx-link-external'></i> Visit VERT Website
+        </a>
+        <a href="../index.html#portfolio" class="btn-custom" style="background: linear-gradient(135deg, #6366F1, #8B5CF6); border: 2px solid rgba(99, 102, 241, 0.3);">
+          <i class='bx bx-arrow-back'></i> Back to Portfolio
         </a>
       </div>
     </div>

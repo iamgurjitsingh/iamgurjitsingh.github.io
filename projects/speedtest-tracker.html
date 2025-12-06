@@ -190,49 +190,35 @@
       transform: scale(1.1);
     }
 
-    .btn-primary-custom {
-      background: linear-gradient(135deg, #3B82F6, #2563EB);
-      border: none;
-      padding: 15px 40px;
-      border-radius: 30px;
-      font-weight: 600;
-      font-size: 1.05rem;
-      transition: all 0.3s ease;
+    .btn-custom {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
       color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      margin: 10px;
-      letter-spacing: -0.01em;
-    }
-
-    .btn-primary-custom:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.5);
-      color: white;
-    }
-
-    .btn-secondary-custom {
-      background: linear-gradient(135deg, #10B981, #059669);
-      border: none;
-      padding: 15px 40px;
-      border-radius: 30px;
       font-weight: 600;
-      font-size: 1.05rem;
       transition: all 0.3s ease;
-      color: white;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
+      border: none;
       margin: 10px;
-      letter-spacing: -0.01em;
+      font-size: 1rem;
     }
 
-    .btn-secondary-custom:hover {
+    .btn-custom:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.5);
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: linear-gradient(135deg, var(--accent-color), #059669);
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
       color: white;
     }
 
@@ -329,26 +315,26 @@
       position: fixed;
       top: 20px;
       left: 20px;
-      background: rgba(255, 255, 255, 0.95);
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
       backdrop-filter: blur(10px);
-      border: 1px solid rgba(59, 130, 246, 0.3);
+      border: none;
       padding: 12px 25px;
       border-radius: 30px;
-      color: var(--secondary-color);
+      color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       transition: all 0.3s ease;
       display: inline-flex;
       align-items: center;
       gap: 10px;
       z-index: 1000;
-      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.15);
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
     }
 
     .back-btn:hover {
-      background: rgba(219, 234, 254, 0.95);
       transform: translateX(-5px);
-      color: var(--primary-color);
+      box-shadow: 0 6px 25px rgba(59, 130, 246, 0.5);
+      color: white;
     }
 
     .highlight-box {
@@ -611,11 +597,14 @@
         Explore the project, contribute to the codebase, or deploy your own instance
       </p>
       <div>
-        <a href="https://github.com/alexjustesen/speedtest-tracker/?source=https://iamgurjitsingh.github.io" target="_blank" class="btn-primary-custom">
+        <a href="https://github.com/alexjustesen/speedtest-tracker/?source=https://iamgurjitsingh.github.io" target="_blank" class="btn-custom">
           <i class='bx bxl-github'></i> View on GitHub
         </a>
-        <a href="https://docs.speedtest-tracker.dev/?source=https://iamgurjitsingh.github.io" target="_blank" class="btn-secondary-custom">
+        <a href="https://docs.speedtest-tracker.dev/?source=https://iamgurjitsingh.github.io" target="_blank" class="btn-custom btn-secondary">
           <i class='bx bx-book-open'></i> Documentation
+        </a>
+        <a href="../index.html#portfolio" class="btn-custom" style="background: linear-gradient(135deg, #6366F1, #8B5CF6); border: 2px solid rgba(99, 102, 241, 0.3);">
+          <i class='bx bx-arrow-back'></i> Back to Portfolio
         </a>
       </div>
     </div>
