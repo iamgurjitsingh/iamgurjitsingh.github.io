@@ -6,7 +6,7 @@
 
 ## 👨‍💻 About Me
 
-Senior Software Engineer at **IONOS BY 1&1** in Berlin, Germany with 15+ years of experience in building scalable enterprise applications. Passionate about open-source contribution, cloud architecture, and modern web technologies.
+Senior Software Engineer in Berlin, Germany with 15+ years of experience in building scalable enterprise applications. Passionate about open-source contribution, cloud architecture, and modern web technologies.
 
 🌐 **Live Portfolio:** [iamgurjitsingh.github.io](https://iamgurjitsingh.github.io/)
 
