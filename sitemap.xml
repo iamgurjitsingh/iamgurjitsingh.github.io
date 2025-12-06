@@ -76,13 +76,4 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ML Project Page -->
-  <url>
-    <loc>https://iamgurjitsingh.github.io/projects/ml.html</loc>
-    <lastmod>2025-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
 </urlset>
-
