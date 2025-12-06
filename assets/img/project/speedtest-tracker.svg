@@ -1,6 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
     <!-- Blue Gradient Background -->
     <defs>
+        <!-- Modern Typography Styles -->
+        <style>
+            text {
+                font-family: 'Inter', 'Roboto', 'SF Pro Text', system-ui, sans-serif;
+                font-weight: 400;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .title-text {
+                font-family: 'Poppins', 'Montserrat', 'SF Pro Display', system-ui, sans-serif;
+                font-weight: 800;
+                letter-spacing: -2px;
+            }
+            .subtitle-text {
+                font-family: 'Inter', 'Roboto', system-ui, sans-serif;
+                font-weight: 600;
+                letter-spacing: -0.5px;
+            }
+            .body-text {
+                font-family: 'Inter', 'Open Sans', system-ui, sans-serif;
+                font-weight: 400;
+                letter-spacing: 0.3px;
+            }
+            .number-text {
+                font-family: 'Space Grotesk', 'Rajdhani', 'SF Mono', monospace;
+                font-weight: 800;
+                letter-spacing: -1px;
+            }
+            .label-text {
+                font-family: 'Inter', 'Roboto', system-ui, sans-serif;
+                font-weight: 700;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+            }
+        </style>
+
         <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style="stop-color:#EFF6FF;stop-opacity:1" />
             <stop offset="50%" style="stop-color:#DBEAFE;stop-opacity:1" />
@@ -64,31 +100,31 @@
         <circle cx="50" cy="22" r="4" fill="#FBBF24"/>
 
         <!-- Card Title -->
-        <text x="70" y="28" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#1F2937">Speed History</text>
+        <text x="70" y="28" font-size="16" font-weight="600" fill="#1F2937">Speed History</text>
 
         <!-- Speed Stats -->
         <g transform="translate(20, 65)">
             <!-- Download Speed -->
             <rect x="0" y="0" width="95" height="65" rx="8" fill="#DBEAFE" opacity="0.8"/>
-            <text x="47.5" y="28" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2563EB" text-anchor="middle">342</text>
-            <text x="47.5" y="45" font-family="Arial, sans-serif" font-size="11" fill="#6B7280" text-anchor="middle">Mbps</text>
-            <text x="47.5" y="58" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#3B82F6" text-anchor="middle">DOWNLOAD</text>
+            <text x="47.5" y="28" font-size="23" class="number-text" fill="#2563EB" text-anchor="middle">342</text>
+            <text x="47.5" y="45" font-size="11" class="body-text" fill="#6B7280" text-anchor="middle">Mbps</text>
+            <text x="47.5" y="58" font-size="9" class="label-text" fill="#3B82F6" text-anchor="middle">DOWNLOAD</text>
         </g>
 
         <g transform="translate(125, 65)">
             <!-- Upload Speed -->
             <rect x="0" y="0" width="95" height="65" rx="8" fill="#D1FAE5" opacity="0.8"/>
-            <text x="47.5" y="28" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#059669" text-anchor="middle">128</text>
-            <text x="47.5" y="45" font-family="Arial, sans-serif" font-size="11" fill="#6B7280" text-anchor="middle">Mbps</text>
-            <text x="47.5" y="58" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#10B981" text-anchor="middle">UPLOAD</text>
+            <text x="47.5" y="28" font-size="23" class="number-text" fill="#059669" text-anchor="middle">128</text>
+            <text x="47.5" y="45" font-size="11" class="body-text" fill="#6B7280" text-anchor="middle">Mbps</text>
+            <text x="47.5" y="58" font-size="9" class="label-text" fill="#10B981" text-anchor="middle">UPLOAD</text>
         </g>
 
         <g transform="translate(230, 65)">
             <!-- Ping -->
             <rect x="0" y="0" width="95" height="65" rx="8" fill="#FEF3C7" opacity="0.8"/>
-            <text x="47.5" y="28" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#D97706" text-anchor="middle">12</text>
-            <text x="47.5" y="45" font-family="Arial, sans-serif" font-size="11" fill="#6B7280" text-anchor="middle">ms</text>
-            <text x="47.5" y="58" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#F59E0B" text-anchor="middle">PING</text>
+            <text x="47.5" y="28" font-size="23" class="number-text" fill="#D97706" text-anchor="middle">12</text>
+            <text x="47.5" y="45" font-size="11" class="body-text" fill="#6B7280" text-anchor="middle">ms</text>
+            <text x="47.5" y="58" font-size="9" class="label-text" fill="#F59E0B" text-anchor="middle">PING</text>
         </g>
 
         <!-- Graph Area -->
@@ -173,14 +209,14 @@
         </g>
 
         <!-- Speed Display -->
-        <text x="0" y="25" font-family="Arial, sans-serif" font-size="28" font-weight="bold"
+        <text x="0" y="25" font-size="30" class="number-text"
               fill="#1F2937" text-anchor="middle">342</text>
-        <text x="0" y="40" font-family="Arial, sans-serif" font-size="12"
+        <text x="0" y="40" font-size="12" class="body-text"
               fill="#6B7280" text-anchor="middle">Mbps</text>
 
         <!-- Speed Labels -->
-        <text x="-55" y="-35" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#9CA3AF">0</text>
-        <text x="50" y="-35" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#9CA3AF">500</text>
+        <text x="-55" y="-35" font-size="11" class="subtitle-text" fill="#9CA3AF">0</text>
+        <text x="50" y="-35" font-size="11" class="subtitle-text" fill="#9CA3AF">500</text>
 
         <!-- Network Signals -->
         <g transform="translate(0, 65)" opacity="0.6">
@@ -227,21 +263,21 @@
 
     <!-- Logo Text at Top -->
     <g transform="translate(400, 50)">
-        <text x="0" y="0" font-family="Arial, sans-serif" font-size="40" font-weight="bold"
+        <text x="0" y="0" font-size="42" class="title-text"
               fill="#2563EB" text-anchor="middle">Speedtest Tracker</text>
     </g>
 
     <!-- Subtitle -->
     <g transform="translate(400, 85)">
-        <text x="0" y="0" font-family="Arial, sans-serif" font-size="16"
+        <text x="0" y="0" font-size="17" class="subtitle-text"
               fill="#1E40AF" text-anchor="middle">Monitor Your Internet Performance</text>
     </g>
 
     <!-- Description Text -->
     <g transform="translate(400, 120)">
-        <text x="0" y="0" font-family="Arial, sans-serif" font-size="14"
+        <text x="0" y="0" font-size="14.5" class="body-text"
               fill="#1F2937" text-anchor="middle">Track download, upload speeds and ping in real-time.</text>
-        <text x="0" y="20" font-family="Arial, sans-serif" font-size="14"
+        <text x="0" y="20" font-size="14.5" class="body-text"
               fill="#1F2937" text-anchor="middle">Beautiful dashboards with historical data and insights.</text>
     </g>
 
