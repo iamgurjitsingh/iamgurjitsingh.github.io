@@ -240,6 +240,13 @@
       font-weight: 500;
     }
 
+    /* Hide fixed back button on mobile devices */
+    @media (max-width: 768px) {
+      .back-button {
+        display: none;
+      }
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -423,7 +430,7 @@
           <i class='bx bxl-github'></i> View on GitHub
         </a>
         <a href="https://vert.sh/?source=https://iamgurjitsingh.github.io" target="_blank" class="btn-custom btn-secondary">
-          <i class='bx bx-link-external'></i> Visit VERT Website
+          <i class='bx bx-link-external'></i> Visit Vert Website
         </a>
         <a href="../index.html#portfolio" class="btn-custom" style="background: linear-gradient(135deg, #6366F1, #8B5CF6); border: 2px solid rgba(99, 102, 241, 0.3);">
           <i class='bx bx-arrow-back'></i> Back to Portfolio

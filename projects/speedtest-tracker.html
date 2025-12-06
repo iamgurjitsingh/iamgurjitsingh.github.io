@@ -284,6 +284,13 @@
       font-size: 0.95rem;
     }
 
+    /* Hide fixed back button on mobile devices */
+    @media (max-width: 768px) {
+      .back-btn {
+        display: none;
+      }
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
