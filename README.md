@@ -32,12 +32,6 @@ Senior Software Engineer at **IONOS BY 1&1** in Berlin, Germany with 15+ years o
 - **OpenAI Integration** - GPT models, API integration
 - **MCP (Model Context Protocol)** - AI agent development
 - **Python** - ML model development
-- **TensorFlow, scikit-learn** - Machine learning frameworks
-
-### Frontend
-- **JavaScript** - Modern ES6+
-- **HTML5/CSS3** - Responsive design
-- **Bootstrap** - UI frameworks
 
 ## 🌟 Open Source Contributions
 
@@ -61,19 +55,6 @@ Elegant Laravel admin panel framework
 - **Contribution:** Core features, UI improvements
 - [![GitHub](https://img.shields.io/badge/GitHub-filamentphp-black)](https://github.com/filamentphp/filament)
 
-## 💼 Professional Experience
-
-### IONOS BY 1&1 (2023 - Present)
-**Specialist Software Engineer** | Berlin, Germany
-- Leading development of scalable microservices architecture
-- Managing team of 4-5 developers
-- Implementing AI/ML solutions with OpenAI integration
-- Cloud infrastructure optimization with Kubernetes
-
-### Previous Experience
-- **Freelance Software Consultant** (2018-2023)
-- **Senior PHP Developer** - Various tech companies
-- **E-commerce Specialist** - Magento implementations
 
 ## 📫 Get In Touch
 
@@ -83,12 +64,6 @@ Elegant Laravel admin panel framework
 - 📧 Email: gurjitsinghdev@gmail.com
 - 📍 Location: Berlin, Germany
 
-## 🎯 Currently
-
-- 🔭 Working on AI-powered applications with OpenAI
-- 🌱 Learning advanced Kubernetes patterns
-- 👯 Contributing to open-source Laravel projects
-- 💬 Available for consulting and collaboration
 
 ## 📊 GitHub Stats
 
