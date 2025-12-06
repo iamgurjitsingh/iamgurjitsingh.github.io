@@ -1116,3 +1116,19 @@ section .container {
     transform: translateX(-50%);
   }
 }
+
+/*--------------------------------------------------------------
+# Mobile Portfolio - Show Only Info Icon
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  /* Hide GitHub and external link icons on mobile, keep only info icon */
+  .portfolio .portfolio-wrap .portfolio-links a:nth-child(2),
+  .portfolio .portfolio-wrap .portfolio-links a:nth-child(3) {
+    display: none !important;
+  }
+
+  /* Make the info icon more prominent on mobile */
+  .portfolio .portfolio-wrap .portfolio-links a:first-child {
+    font-size: 32px;
+  }
+}
