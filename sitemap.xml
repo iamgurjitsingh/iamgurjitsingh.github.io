@@ -7,7 +7,7 @@
   <!-- Main Page -->
   <url>
     <loc>https://iamgurjitsingh.github.io/</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2025-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,7 +15,7 @@
   <!-- About Section -->
   <url>
     <loc>https://iamgurjitsingh.github.io/#about</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2025-12-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -23,32 +23,39 @@
   <!-- Portfolio Section -->
   <url>
     <loc>https://iamgurjitsingh.github.io/#portfolio</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2025-12-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
   <!-- Skills Section -->
   <url>
     <loc>https://iamgurjitsingh.github.io/#skills</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2025-12-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Experience Section -->
+  <url>
+    <loc>https://iamgurjitsingh.github.io/#experience</loc>
+    <lastmod>2025-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Contact Section -->
   <url>
     <loc>https://iamgurjitsingh.github.io/#contacts</loc>
-    <lastmod>2025-11-24</lastmod>
+    <lastmod>2025-12-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
-
   <!-- VERT Open Source Project Page -->
   <url>
     <loc>https://iamgurjitsingh.github.io/projects/vert.html</loc>
-    <lastmod>2025-12-02</lastmod>
+    <lastmod>2025-12-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

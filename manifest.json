@@ -1,0 +1,36 @@
+{
+  "name": "Gurjit Singh - Senior Software Engineer Portfolio",
+  "short_name": "Gurjit Singh",
+  "description": "Portfolio of Gurjit Singh - Senior Software Engineer at IONOS BY 1&1, Berlin. Expert in PHP, Laravel, Symfony, Docker, Kubernetes, and cloud architecture.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1629",
+  "theme_color": "#FBCB3A",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "technology", "business"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
+

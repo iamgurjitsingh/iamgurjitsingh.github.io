@@ -1,4 +1,99 @@
-# Personal Portfolio 🔥
-# iamgurjitsingh.github.io
+# 🚀 Gurjit Singh - Senior Software Engineer Portfolio
 
-https://iamgurjitsingh.github.io/
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://iamgurjitsingh.github.io/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/iamgurjitsingh)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/iamgurjitsingh)
+
+## 👨‍💻 About Me
+
+Senior Software Engineer at **IONOS BY 1&1** in Berlin, Germany with 15+ years of experience in building scalable enterprise applications. Passionate about open-source contribution, cloud architecture, and modern web technologies.
+
+🌐 **Live Portfolio:** [iamgurjitsingh.github.io](https://iamgurjitsingh.github.io/)
+
+## 🛠️ Tech Stack & Expertise
+
+### Backend Development
+- **PHP** (15+ years) - Laravel, Symfony, Magento
+- **MySQL** - Database design, optimization, and administration
+- **RESTful APIs** - Microservices architecture
+
+### DevOps & Cloud
+- **Docker** & **Kubernetes** - Container orchestration
+- **AWS, GCP** - Cloud architecture
+- **CI/CD** - Automated deployment pipelines
+
+### Modern Tools & Platforms
+- **Supabase** - Backend-as-a-Service
+- **Vercel** - Deployment platform
+- **Railway** - Cloud infrastructure
+- **Firebase** - Real-time database
+
+### AI & Machine Learning
+- **OpenAI Integration** - GPT models, API integration
+- **MCP (Model Context Protocol)** - AI agent development
+- **Python** - ML model development
+- **TensorFlow, scikit-learn** - Machine learning frameworks
+
+### Frontend
+- **JavaScript** - Modern ES6+
+- **HTML5/CSS3** - Responsive design
+- **Bootstrap** - UI frameworks
+
+## 🌟 Open Source Contributions
+
+### Featured Projects
+
+#### 🔄 [VERT - File Converter](https://vert.sh/)
+Privacy-focused file converter running entirely in your browser
+- **Tech:** JavaScript, WebAssembly
+- **Contribution:** Feature enhancements, bug fixes
+- [![GitHub](https://img.shields.io/badge/GitHub-VERT--sh%2FVERT-black)](https://github.com/VERT-sh/VERT)
+
+#### 📊 [Speedtest Tracker](https://docs.speedtest-tracker.dev/)
+Self-hosted internet performance monitoring tool
+- **Tech:** Laravel, PHP, Docker
+- **Stats:** 4.6k+ ⭐ | 178 🍴
+- [![GitHub](https://img.shields.io/badge/GitHub-speedtest--tracker-black)](https://github.com/alexjustesen/speedtest-tracker)
+
+#### 🎨 [Filament PHP](https://filamentphp.com/)
+Elegant Laravel admin panel framework
+- **Tech:** Laravel, Livewire, Tailwind CSS
+- **Contribution:** Core features, UI improvements
+- [![GitHub](https://img.shields.io/badge/GitHub-filamentphp-black)](https://github.com/filamentphp/filament)
+
+## 💼 Professional Experience
+
+### IONOS BY 1&1 (2023 - Present)
+**Specialist Software Engineer** | Berlin, Germany
+- Leading development of scalable microservices architecture
+- Managing team of 4-5 developers
+- Implementing AI/ML solutions with OpenAI integration
+- Cloud infrastructure optimization with Kubernetes
+
+### Previous Experience
+- **Freelance Software Consultant** (2018-2023)
+- **Senior PHP Developer** - Various tech companies
+- **E-commerce Specialist** - Magento implementations
+
+## 📫 Get In Touch
+
+- 🌐 Portfolio: [iamgurjitsingh.github.io](https://iamgurjitsingh.github.io/)
+- 💼 LinkedIn: [linkedin.com/in/iamgurjitsingh](https://www.linkedin.com/in/iamgurjitsingh)
+- 🐙 GitHub: [github.com/iamgurjitsingh](https://github.com/iamgurjitsingh)
+- 📧 Email: gurjitsinghdev@gmail.com
+- 📍 Location: Berlin, Germany
+
+## 🎯 Currently
+
+- 🔭 Working on AI-powered applications with OpenAI
+- 🌱 Learning advanced Kubernetes patterns
+- 👯 Contributing to open-source Laravel projects
+- 💬 Available for consulting and collaboration
+
+## 📊 GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=iamgurjitsingh&show_icons=true&theme=radical)
+
+---
+
+⭐️ From [iamgurjitsingh](https://github.com/iamgurjitsingh) | Built with ❤️ in Berlin
