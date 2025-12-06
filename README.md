@@ -64,11 +64,6 @@ Elegant Laravel admin panel framework
 - 📧 Email: gurjitsinghdev@gmail.com
 - 📍 Location: Berlin, Germany
 
-
-## 📊 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=iamgurjitsingh&show_icons=true&theme=radical)
-
 ---
 
 ⭐️ From [iamgurjitsingh](https://github.com/iamgurjitsingh) | Built with ❤️ in Berlin
