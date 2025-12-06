@@ -45,7 +45,7 @@
 
 /* Light Theme Styles */
 body.light-theme {
-  color: #333;
+  color: #1a1a2e;
 }
 
 body.light-theme::before {
@@ -64,6 +64,472 @@ body.light-theme .theme-toggle {
 
 body.light-theme .theme-toggle i {
   color: #667eea;
+}
+
+/* Light Theme - Header & Text Fixes */
+body.light-theme #header h1,
+body.light-theme #header h1 a {
+  color: #1a1a2e !important;
+}
+
+body.light-theme #header h2 {
+  color: #667eea !important;
+}
+
+body.light-theme #header h2 span,
+body.light-theme .typing {
+  color: #5a67d8 !important;
+  border-bottom-color: #667eea !important;
+}
+
+/* Light Theme - Navigation */
+body.light-theme .nav-menu a,
+body.light-theme .nav-menu li a {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .nav-menu a:hover,
+body.light-theme .nav-menu .active > a,
+body.light-theme .nav-menu li:hover > a {
+  color: #667eea !important;
+}
+
+/* Light Theme - Social Links */
+body.light-theme #header .social-links a {
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea !important;
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+body.light-theme #header .social-links a:hover {
+  background: rgba(102, 126, 234, 0.2);
+  color: #5a67d8 !important;
+}
+
+/* Light Theme - Section Titles */
+body.light-theme .section-title h2 {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .section-title h2::after,
+body.light-theme .section-title h2::before {
+  background: #667eea !important;
+}
+
+/* Light Theme - Section Backgrounds */
+body.light-theme section .container {
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Light Theme - About Section */
+body.light-theme .about .content h3 {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .about .content p {
+  color: #4a5568 !important;
+}
+
+body.light-theme .about .content ul i {
+  color: #667eea !important;
+}
+
+body.light-theme .about .content ul li {
+  color: #4a5568 !important;
+}
+
+/* Light Theme - Experience Section */
+body.light-theme .experience-item h4,
+body.light-theme .experience-item h5 {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .experience-item p,
+body.light-theme .experience-item ul li {
+  color: #4a5568 !important;
+}
+
+body.light-theme .experience-item .company-logo {
+  background: rgba(102, 126, 234, 0.05);
+}
+
+/* Light Theme - Skills Section */
+body.light-theme .skills .progress-bar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+body.light-theme .skills .skill-name {
+  color: #1a1a2e !important;
+}
+
+/* Light Theme - Portfolio */
+body.light-theme .portfolio #portfolio-flters li {
+  color: #4a5568 !important;
+  background: rgba(102, 126, 234, 0.1);
+}
+
+body.light-theme .portfolio #portfolio-flters li:hover,
+body.light-theme .portfolio #portfolio-flters li.filter-active {
+  color: #fff !important;
+  background: #667eea !important;
+}
+
+body.light-theme .project-title-below {
+  color: #1a1a2e !important;
+}
+
+/* Light Theme - Contact Section */
+body.light-theme .contact .info-box {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #1a1a2e !important;
+}
+
+body.light-theme .contact .info-box i {
+  color: #667eea !important;
+}
+
+body.light-theme .contact .info-box h3,
+body.light-theme .contact .info-box p {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .contact .info-box a {
+  color: #667eea !important;
+}
+
+/* Light Theme - Credits */
+body.light-theme .credits,
+body.light-theme .credits a {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .credits a:hover {
+  color: #667eea !important;
+}
+
+/* Light Theme - Links */
+body.light-theme a {
+  color: #667eea !important;
+}
+
+body.light-theme a:hover {
+  color: #5a67d8 !important;
+}
+
+/* Light Theme - Resume/Experience Section */
+body.light-theme .resume .resume-title {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .resume .resume-item {
+  border-left-color: rgba(102, 126, 234, 0.3) !important;
+}
+
+body.light-theme .resume .resume-item h4 {
+  color: #667eea !important;
+}
+
+body.light-theme .resume .resume-item h5 {
+  color: #1a1a2e !important;
+  background: rgba(102, 126, 234, 0.1) !important;
+}
+
+body.light-theme .resume .resume-item p,
+body.light-theme .resume .resume-item ul li {
+  color: #4a5568 !important;
+}
+
+body.light-theme .resume .resume-item::before {
+  background: #667eea !important;
+  border-color: #667eea !important;
+}
+
+/* Light Theme - Services Section */
+body.light-theme .services .icon-box {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #1a1a2e !important;
+}
+
+body.light-theme .services .icon-box h4 {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .services .icon-box p {
+  color: #4a5568 !important;
+}
+
+body.light-theme .services .icon-box .icon i {
+  color: #667eea !important;
+}
+
+/* Light Theme - Testimonials */
+body.light-theme .testimonials .testimonial-item {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #1a1a2e !important;
+}
+
+body.light-theme .testimonials .testimonial-item h3 {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .testimonials .testimonial-item h4 {
+  color: #667eea !important;
+}
+
+body.light-theme .testimonials .testimonial-item p {
+  color: #4a5568 !important;
+}
+
+/* Light Theme - Forms */
+body.light-theme input,
+body.light-theme textarea {
+  color: #1a1a2e !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(102, 126, 234, 0.3) !important;
+}
+
+body.light-theme input::placeholder,
+body.light-theme textarea::placeholder {
+  color: #718096 !important;
+}
+
+/* Light Theme - Footer */
+body.light-theme #footer {
+  color: #1a1a2e !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+
+body.light-theme #footer h3,
+body.light-theme #footer h4 {
+  color: #1a1a2e !important;
+}
+
+body.light-theme #footer p {
+  color: #4a5568 !important;
+}
+
+/* Light Theme - Back to Top Button */
+body.light-theme .back-to-top {
+  background: #667eea !important;
+  color: #fff !important;
+}
+
+body.light-theme .back-to-top:hover {
+  background: #5a67d8 !important;
+}
+
+/* Light Theme - General Paragraphs and Text */
+body.light-theme p,
+body.light-theme li {
+  color: #4a5568 !important;
+}
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4,
+body.light-theme h5,
+body.light-theme h6 {
+  color: #1a1a2e !important;
+}
+
+/* Light Theme - Buttons */
+body.light-theme button,
+body.light-theme .btn {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .btn-primary {
+  background: #667eea !important;
+  border-color: #667eea !important;
+  color: #fff !important;
+}
+
+body.light-theme .btn-primary:hover {
+  background: #5a67d8 !important;
+  border-color: #5a67d8 !important;
+}
+
+/* Light Theme - Mobile Navigation */
+body.light-theme .mobile-nav-toggle {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .mobile-nav-toggle i {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .mobile-nav {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+body.light-theme .mobile-nav a,
+body.light-theme .mobile-nav li a {
+  color: #1a1a2e !important;
+}
+
+/* Light Theme - Breadcrumbs */
+body.light-theme .breadcrumbs {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #1a1a2e !important;
+}
+
+body.light-theme .breadcrumbs a {
+  color: #667eea !important;
+}
+
+/* Light Theme - Scroll Indicator */
+body.light-theme .back-to-top i {
+  color: #fff !important;
+}
+
+/* Light Theme - Tool Icons */
+body.light-theme .tools-section .icon-box i {
+  color: #667eea !important;
+}
+
+/* Light Theme - Counters and Numbers */
+body.light-theme .counter,
+body.light-theme .count-box span {
+  color: #1a1a2e !important;
+}
+
+/* Light Theme - List Items */
+body.light-theme ol li,
+body.light-theme ul li {
+  color: #4a5568 !important;
+}
+
+/* Light Theme - Strong and Bold Text */
+body.light-theme strong,
+body.light-theme b {
+  color: #1a1a2e !important;
+}
+
+/* Light Theme - Small Text */
+body.light-theme small {
+  color: #718096 !important;
+}
+
+/* Light Theme - Dividers */
+body.light-theme hr {
+  border-color: rgba(102, 126, 234, 0.2) !important;
+}
+
+/* Light Theme - Experience Section Specific */
+body.light-theme .experience-item .company-name {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .experience-item .job-title {
+  color: #667eea !important;
+}
+
+body.light-theme .experience-item .duration,
+body.light-theme .experience-item .location {
+  color: #4a5568 !important;
+}
+
+body.light-theme .experience-item .experience-description {
+  color: #4a5568 !important;
+}
+
+body.light-theme .experience-item .experience-description p {
+  color: #4a5568 !important;
+}
+
+/* Light Theme - Interests Section */
+body.light-theme .interests .icon-box h3 {
+  color: #1a1a2e !important;
+}
+
+/* Light Theme - Card 3D Elements */
+body.light-theme .card-3d {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(102, 126, 234, 0.2) !important;
+}
+
+body.light-theme .card-3d:hover {
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3) !important;
+  border-color: rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Light Theme - Duration Location Text */
+body.light-theme .duration-location p {
+  color: #718096 !important;
+}
+
+body.light-theme .experience-header {
+  color: #1a1a2e !important;
+}
+
+/* Light Theme - Text Selection */
+body.light-theme ::selection {
+  background: #667eea !important;
+  color: #fff !important;
+}
+
+body.light-theme ::-moz-selection {
+  background: #667eea !important;
+  color: #fff !important;
+}
+
+/* Light Theme - Placeholder Text */
+body.light-theme ::-webkit-input-placeholder {
+  color: #718096 !important;
+}
+
+body.light-theme ::-moz-placeholder {
+  color: #718096 !important;
+}
+
+body.light-theme :-ms-input-placeholder {
+  color: #718096 !important;
+}
+
+body.light-theme ::-ms-input-placeholder {
+  color: #718096 !important;
+}
+
+body.light-theme ::placeholder {
+  color: #718096 !important;
+}
+
+/* Light Theme - Labels */
+body.light-theme label {
+  color: #1a1a2e !important;
+}
+
+/* Light Theme - Spans */
+body.light-theme span {
+  color: inherit;
+}
+
+/* Light Theme - Code Blocks */
+body.light-theme code,
+body.light-theme pre {
+  color: #1a1a2e !important;
+  background: rgba(102, 126, 234, 0.1) !important;
+}
+
+/* Light Theme - Blockquote */
+body.light-theme blockquote {
+  color: #4a5568 !important;
+  border-left-color: #667eea !important;
+}
+
+/* Light Theme - Table */
+body.light-theme table {
+  color: #1a1a2e !important;
+}
+
+body.light-theme table th {
+  color: #1a1a2e !important;
+  background: rgba(102, 126, 234, 0.1) !important;
+}
+
+body.light-theme table td {
+  color: #4a5568 !important;
 }
 
 /* Cursor Trail Effect */
