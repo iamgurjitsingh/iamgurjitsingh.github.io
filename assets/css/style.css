@@ -728,6 +728,29 @@ section .container {
   margin-bottom: 30px;
 }
 
+.portfolio .project-title-below {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  background: linear-gradient(135deg, #FBCB3A 0%, #FDCD57 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.portfolio .project-title-below:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;

@@ -1,129 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
   <defs>
-    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FD97FA;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#FD97FA;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#E87AE8;stop-opacity:1" />
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6bff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff8cff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffb3ff;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="card-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#f5f5f5;stop-opacity:0.95" />
-    </linearGradient>
+
     <filter id="shadow">
-      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-opacity="0.3"/>
-    </filter>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
     </filter>
   </defs>
 
   <!-- Background -->
-  <rect width="800" height="600" fill="url(#bg-gradient)"/>
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
 
-  <!-- Decorative Elements -->
-  <circle cx="100" cy="100" r="150" fill="#ffffff" opacity="0.1"/>
-  <circle cx="700" cy="500" r="200" fill="#ffffff" opacity="0.1"/>
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="60" fill="#ff99ff" opacity="0.3"/>
+  <circle cx="700" cy="350" r="80" fill="#ffccff" opacity="0.3"/>
+  <circle cx="650" cy="80" r="45" fill="#ff66ff" opacity="0.2"/>
 
-  <!-- 3D Card Container -->
-  <g transform="translate(400, 300)">
-    <!-- Card Shadow -->
-    <rect x="-280" y="-180" width="560" height="400" rx="20" fill="#000000" opacity="0.2" transform="translate(10, 15)"/>
+  <!-- VERT logo centered at top -->
+  <rect x="325" y="30" width="150" height="55" rx="28" fill="white" filter="url(#shadow)"/>
+  <text x="400" y="68" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#ff6bff" text-anchor="middle">VERT</text>
 
-    <!-- Main Card -->
-    <rect x="-280" y="-180" width="560" height="400" rx="20" fill="url(#card-gradient)" filter="url(#shadow)"/>
+  <!-- Contributor Badge (star icon) -->
+  <g transform="translate(80, 90)">
+    <circle cx="0" cy="0" r="16" fill="#FFD700" opacity="0.3"/>
+    <polygon points="0,-9 2.2,-2.8 9,-2 3.5,2.8 4.5,9 0,5.5 -4.5,9 -3.5,2.8 -9,-2 -2.2,-2.8" fill="#FFD700"/>
+  </g>
 
-    <!-- Card Border -->
-    <rect x="-280" y="-180" width="560" height="400" rx="20" fill="none" stroke="#FD97FA" stroke-width="2"/>
+  <!-- Main headline -->
+  <text x="100" y="180" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#1a1a1a">
+    The file
+  </text>
+  <text x="100" y="225" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#1a1a1a">
+    <tspan fill="#ff3399">converter</tspan>
+  </text>
+  <text x="100" y="270" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#1a1a1a">
+    you'll love.
+  </text>
 
-    <!-- Contributor Badge (inside card, top-right) -->
-    <g transform="translate(220, -155)">
-      <circle cx="0" cy="0" r="18" fill="#FFD700" opacity="0.2"/>
-      <polygon points="0,-8 2,-3 7,-2 3,2 4,7 0,4 -4,7 -3,2 -7,-2 -2,-3" fill="#FFD700"/>
-      <text x="0" y="30" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#666" text-anchor="middle">Contributor</text>
-    </g>
+  <!-- Description text -->
+  <text x="100" y="310" font-family="Arial, sans-serif" font-size="13" fill="#4a4a4a">
+    <tspan x="100" dy="0">All image, audio, and document</tspan>
+    <tspan x="100" dy="20">processing is done on your device.</tspan>
+    <tspan x="100" dy="20">Videos are converted on our</tspan>
+    <tspan x="100" dy="20">lightning-fast servers. No file size</tspan>
+    <tspan x="100" dy="20">limit, no ads, and completely</tspan>
+    <tspan x="100" dy="20">open source.</tspan>
+  </text>
 
-    <!-- VERT Logo Text -->
-    <text x="0" y="-80" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#FD97FA" text-anchor="middle">
-      VERT
-    </text>
+  <!-- Upload card -->
+  <rect x="460" y="160" width="300" height="230" rx="25" fill="white" filter="url(#shadow)"/>
 
-    <!-- Subtitle -->
-    <text x="0" y="-30" font-family="Arial, sans-serif" font-size="24" fill="#666" text-anchor="middle">
-      The File Converter You'll Love
-    </text>
+  <!-- Upload icon (cartoon style) -->
+  <circle cx="610" cy="245" r="35" fill="#ff6bff" opacity="0.3"/>
+  <circle cx="610" cy="245" r="27" fill="#ff6bff"/>
+  <path d="M 610,232 L 598,244 L 604,244 L 604,258 L 616,258 L 616,244 L 622,244 Z" fill="white" stroke="white" stroke-width="1.5"/>
 
-    <!-- Decorative Line -->
-    <line x1="-200" y1="0" x2="200" y2="0" stroke="#FD97FA" stroke-width="2"/>
+  <!-- Drop text -->
+  <text x="610" y="320" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1a1a1a" text-anchor="middle">
+    Drop or click to convert
+  </text>
 
-    <!-- Feature Icons -->
-    <g transform="translate(-180, 40)">
-      <!-- Images Icon -->
-      <circle cx="0" cy="20" r="30" fill="#FD97FA" opacity="0.3" filter="url(#glow)"/>
-      <rect x="-15" y="8" width="30" height="24" rx="3" fill="none" stroke="#FD97FA" stroke-width="2.5"/>
-      <circle cx="-7" cy="15" r="3.5" fill="#FFD700"/>
-      <polyline points="-15,26 -8,20 -2,24 4,18 15,28" fill="none" stroke="#FD97FA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <line x1="-15" y1="32" x2="15" y2="32" stroke="#FD97FA" stroke-width="2.5"/>
-      <text x="0" y="65" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#333" text-anchor="middle">Images</text>
-    </g>
-
-    <g transform="translate(-60, 40)">
-      <!-- Audio Icon -->
-      <circle cx="0" cy="20" r="30" fill="#FD97FA" opacity="0.3" filter="url(#glow)"/>
-      <rect x="-12" y="12" width="8" height="16" rx="2" fill="#FD97FA"/>
-      <rect x="-2" y="8" width="8" height="24" rx="2" fill="#FD97FA"/>
-      <rect x="8" y="14" width="8" height="12" rx="2" fill="#FD97FA"/>
-      <path d="M -16 20 Q -14 16, -12 20 Q -14 24, -16 20" fill="none" stroke="#FD97FA" stroke-width="2"/>
-      <path d="M 16 20 Q 18 16, 20 20 Q 18 24, 16 20" fill="none" stroke="#FD97FA" stroke-width="2"/>
-      <text x="0" y="65" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#333" text-anchor="middle">Audio</text>
-    </g>
-
-    <g transform="translate(60, 40)">
-      <!-- Document Icon -->
-      <circle cx="0" cy="20" r="30" fill="#FD97FA" opacity="0.3" filter="url(#glow)"/>
-      <rect x="-12" y="10" width="24" height="28" rx="2" fill="none" stroke="#FD97FA" stroke-width="2.5"/>
-      <path d="M -12 10 L -12 15 L -7 15 L -12 10" fill="#FD97FA"/>
-      <line x1="-7" y1="18" x2="7" y2="18" stroke="#FD97FA" stroke-width="2"/>
-      <line x1="-7" y1="22" x2="7" y2="22" stroke="#FD97FA" stroke-width="2"/>
-      <line x1="-7" y1="26" x2="7" y2="26" stroke="#FD97FA" stroke-width="2"/>
-      <line x1="-7" y1="30" x2="5" y2="30" stroke="#FD97FA" stroke-width="2"/>
-      <line x1="-7" y1="34" x2="7" y2="34" stroke="#FD97FA" stroke-width="2"/>
-      <text x="0" y="65" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#333" text-anchor="middle">Docs</text>
-    </g>
-
-    <g transform="translate(180, 40)">
-      <!-- Video Icon -->
-      <circle cx="0" cy="20" r="30" fill="#FD97FA" opacity="0.3" filter="url(#glow)"/>
-      <rect x="-15" y="10" width="30" height="20" rx="3" fill="none" stroke="#FD97FA" stroke-width="2.5"/>
-      <circle cx="-10" cy="14" r="1.5" fill="#FD97FA"/>
-      <circle cx="10" cy="14" r="1.5" fill="#FD97FA"/>
-      <polygon points="-5,16 -5,24 5,20" fill="#FD97FA"/>
-      <rect x="-15" y="31" width="6" height="4" rx="1" fill="#FD97FA"/>
-      <rect x="9" y="31" width="6" height="4" rx="1" fill="#FD97FA"/>
-      <line x1="-9" y1="30" x2="9" y2="30" stroke="#FD97FA" stroke-width="2"/>
-      <text x="0" y="65" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#333" text-anchor="middle">Video</text>
-    </g>
-
-    <!-- Two Buttons -->
-    <g transform="translate(0, 150)">
-      <!-- Open Source Button -->
-      <g transform="translate(-90, 0)">
-        <rect x="-65" y="-16" width="130" height="32" rx="16" fill="#EC4899" filter="url(#glow)"/>
-        <text x="0" y="6" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">
-          OPEN SOURCE
-        </text>
-      </g>
-      <!-- Contributor Button -->
-      <g transform="translate(90, 0)">
-        <rect x="-65" y="-16" width="130" height="32" rx="16" fill="#D946A6" filter="url(#glow)"/>
-        <text x="0" y="6" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">
-          CONTRIBUTOR
-        </text>
-      </g>
-    </g>
+  <!-- Decorative stars/sparkles -->
+  <g transform="translate(140, 140)">
+    <path d="M 0,-8 L 1.6,-1.6 L 8,0 L 1.6,1.6 L 0,8 L -1.6,1.6 L -8,0 L -1.6,-1.6 Z" fill="#ffcc00"/>
+  </g>
+  <g transform="translate(440, 135)">
+    <path d="M 0,-6 L 1.2,-1.2 L 6,0 L 1.2,1.2 L 0,6 L -1.2,1.2 L -6,0 L -1.2,-1.2 Z" fill="#ff66ff"/>
+  </g>
+  <g transform="translate(720, 200)">
+    <path d="M 0,-9 L 2,-2 L 9,0 L 2,2 L 0,9 L -2,2 L -9,0 L -2,-2 Z" fill="#ffcc00"/>
   </g>
 
 </svg>
