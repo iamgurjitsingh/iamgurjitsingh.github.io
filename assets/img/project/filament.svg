@@ -1,6 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
   <!-- Light Yellow Background -->
   <defs>
+    <!-- Modern Typography Styles -->
+    <style>
+      text {
+        font-family: 'Inter', 'Roboto', 'SF Pro Text', system-ui, sans-serif;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .title-text {
+        font-family: 'Poppins', 'Montserrat', 'SF Pro Display', system-ui, sans-serif;
+        font-weight: 800;
+        letter-spacing: -2px;
+      }
+      .subtitle-text {
+        font-family: 'Inter', 'Roboto', system-ui, sans-serif;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+      }
+      .body-text {
+        font-family: 'Inter', 'Open Sans', system-ui, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+      }
+      .number-text {
+        font-family: 'Space Grotesk', 'Rajdhani', 'SF Mono', monospace;
+        font-weight: 800;
+        letter-spacing: -1px;
+      }
+      .label-text {
+        font-family: 'Inter', 'Roboto', system-ui, sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+    </style>
+
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#FFFBEB;stop-opacity:1" />
       <stop offset="50%" style="stop-color:#FEF3C7;stop-opacity:1" />
@@ -70,7 +105,7 @@
     <circle cx="50" cy="20" r="4" fill="#10B981"/>
 
     <!-- Dashboard Title -->
-    <text x="70" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#1F2937">Filament Dashboard</text>
+    <text x="70" y="25" font-size="14" font-weight="600" fill="#1F2937">Filament Dashboard</text>
 
     <!-- Stats Cards -->
     <rect x="20" y="60" width="85" height="50" rx="6" fill="#FEF3C7" opacity="0.8"/>
@@ -78,14 +113,14 @@
     <rect x="216" y="60" width="85" height="50" rx="6" fill="#DCFCE7" opacity="0.8"/>
 
     <!-- Stats Numbers -->
-    <text x="35" y="85" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#F97316">$192k</text>
-    <text x="30" y="100" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Revenue</text>
+    <text x="35" y="85" font-size="21" class="number-text" fill="#F97316">$192k</text>
+    <text x="30" y="100" font-size="10" class="label-text" fill="#6B7280">Revenue</text>
 
-    <text x="145" y="85" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#3B82F6">1340</text>
-    <text x="140" y="100" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Orders</text>
+    <text x="145" y="85" font-size="21" class="number-text" fill="#3B82F6">1340</text>
+    <text x="140" y="100" font-size="10" class="label-text" fill="#6B7280">Orders</text>
 
-    <text x="238" y="85" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#10B981">3543</text>
-    <text x="235" y="100" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Users</text>
+    <text x="238" y="85" font-size="21" class="number-text" fill="#10B981">3543</text>
+    <text x="235" y="100" font-size="10" class="label-text" fill="#6B7280">Users</text>
 
     <!-- Graph Area -->
     <rect x="20" y="125" width="280" height="100" rx="6" fill="#F9FAFB"/>
@@ -202,23 +237,23 @@
 
   <!-- Filament Logo Text at Top -->
   <g transform="translate(400, 50)">
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="40" font-weight="bold"
+    <text x="0" y="0" font-size="42" class="title-text"
           fill="#F97316" text-anchor="middle">Filament</text>
   </g>
 
   <!-- Subtitle -->
   <g transform="translate(400, 85)">
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16"
+    <text x="0" y="0" font-size="17" class="subtitle-text"
           fill="#92400E" text-anchor="middle">Accelerated Laravel Development</text>
   </g>
 
   <!-- Description Text -->
   <g transform="translate(400, 120)">
     <!-- Line 1 -->
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14"
+    <text x="0" y="0" font-size="14.5" class="body-text"
           fill="#1F2937" text-anchor="middle">An open source UI framework, built with Livewire to help you</text>
     <!-- Line 2 -->
-    <text x="0" y="20" font-family="Arial, sans-serif" font-size="14"
+    <text x="0" y="20" font-size="14.5" class="body-text"
           fill="#1F2937" text-anchor="middle">ship admin panels &amp; apps fast</text>
   </g>
 
