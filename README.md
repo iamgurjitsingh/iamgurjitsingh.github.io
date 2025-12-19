@@ -1,4 +1,4 @@
-# 🚀 Gurjit Singh - Software Engineer Portfolio
+# 🚀 Gurjit Singh - Specialist Software Engineer Portfolio
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://iamgurjitsingh.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/iamgurjitsingh)
@@ -6,14 +6,14 @@
 
 ## 👨‍💻 About Me
 
-Software Engineer in Berlin, Germany with 15+ years of experience in building scalable enterprise applications. Passionate about open-source contribution, cloud architecture, and modern web technologies.
+Specialist Software Engineer in Berlin, Germany with 15+ years of experience in building scalable enterprise applications. Passionate about open-source contribution, cloud architecture, and modern web technologies.
 
 🌐 **Live Portfolio:** [iamgurjitsingh.github.io](https://iamgurjitsingh.github.io/)
 
 ## 🛠️ Tech Stack & Expertise
 
 ### Backend Development
-- **PHP** (15+ years) - Laravel, Symfony, Magento
+- **PHP** (15+ years) - Laravel, Symfony, Magento, Wordpress
 - **MySQL** - Database design, optimization, and administration
 - **RESTful APIs** - Microservices architecture
 
