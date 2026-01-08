@@ -1,4 +1,4 @@
-# 🚀 Gurjit Singh - Specialist Software Engineer Portfolio
+# Gurjit Singh - Specialist Software Engineer Portfolio
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://iamgurjitsingh.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/iamgurjitsingh)
