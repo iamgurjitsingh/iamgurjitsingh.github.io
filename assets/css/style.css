@@ -487,6 +487,22 @@ section .container {
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
+#interests-section {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  margin-top: 60px !important;
+}
+
+.interests {
+  margin-bottom: 60px !important;
+  padding-top: 20px;
+}
+
+.interests .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .interests .icon-box {
   display: flex;
   align-items: center;
@@ -774,14 +790,23 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+  padding-bottom: 80px !important;
+  margin-bottom: 60px !important;
+}
+
+.portfolio .container {
+  padding-bottom: 40px;
+}
+
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 60px !important;
 }
 
 .portfolio .project-title-below {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
@@ -1176,3 +1201,210 @@ section .container {
     font-size: 32px;
   }
 }
+
+/*--------------------------------------------------------------
+# Resume Download Button
+--------------------------------------------------------------*/
+.resume-download {
+  margin: 30px 0;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 35px;
+  background: linear-gradient(135deg, #FDCD57 0%, #FBCB3A 100%);
+  color: #1a1a2e;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(253, 205, 87, 0.3);
+  border: 2px solid transparent;
+}
+
+.btn-download:hover {
+  background: linear-gradient(135deg, #FBCB3A 0%, #FDCD57 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(253, 205, 87, 0.5);
+  color: #0a0e27;
+  text-decoration: none;
+}
+
+.btn-download i {
+  font-size: 24px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+/*--------------------------------------------------------------
+# GitHub Activity Section
+--------------------------------------------------------------*/
+.github-activity {
+  margin-top: 50px;
+}
+
+.btn-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 30px;
+  background: transparent;
+  color: #FDCD57;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #FDCD57;
+}
+
+.btn-github-link:hover {
+  background: #FDCD57;
+  color: #1a1a2e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(253, 205, 87, 0.3);
+  text-decoration: none;
+}
+
+.btn-github-link i {
+  font-size: 20px;
+}
+
+/*--------------------------------------------------------------
+# Light Theme Enhancements for New Features
+--------------------------------------------------------------*/
+body.light-theme .btn-download {
+  background: #ffffff;
+  color: #667eea;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  border: 2px solid #667eea;
+}
+
+body.light-theme .btn-download:hover {
+  background: #667eea;
+  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+  color: #ffffff;
+  border-color: #667eea;
+}
+
+body.light-theme .btn-github-link {
+  color: #667eea;
+  border-color: #667eea;
+}
+
+body.light-theme .btn-github-link:hover {
+  background: #667eea;
+  color: #ffffff;
+}
+
+body.light-theme .github-activity p {
+  color: #4a5568 !important;
+}
+
+body.light-theme .github-activity .card-3d {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+body.light-theme .resume-download p {
+  color: #4a5568 !important;
+}
+
+/*--------------------------------------------------------------
+# Responsive Enhancements
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .btn-download {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .btn-download i {
+    font-size: 20px;
+  }
+
+  .github-activity img {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Extra spacing for mobile to prevent overlap */
+  .portfolio {
+    padding-bottom: 100px !important;
+    margin-bottom: 80px !important;
+  }
+
+  .portfolio .portfolio-item {
+    margin-bottom: 80px !important;
+  }
+
+  #interests-section {
+    padding-top: 100px !important;
+    padding-bottom: 80px !important;
+    margin-top: 80px !important;
+  }
+
+  section#skills {
+    padding-top: 100px !important;
+    margin-top: 80px !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Section Spacing and Separation
+--------------------------------------------------------------*/
+section {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+}
+
+section#portfolio {
+  z-index: 2;
+  padding-bottom: 60px !important;
+  margin-bottom: 60px !important;
+}
+
+section#interests-section {
+  z-index: 2;
+  clear: both;
+  padding-top: 80px !important;
+  padding-bottom: 60px !important;
+  margin-top: 60px !important;
+}
+
+section#skills {
+  z-index: 2;
+  clear: both;
+  padding-top: 80px !important;
+  margin-top: 60px !important;
+}
+
+/* Force separation with pseudo-element */
+section#portfolio::after {
+  content: "";
+  display: block;
+  height: 60px;
+  clear: both;
+}
+
+section#interests-section::before {
+  content: "";
+  display: block;
+  height: 40px;
+  clear: both;
+}
+

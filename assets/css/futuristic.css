@@ -121,6 +121,18 @@ body.light-theme section .container {
   background: rgba(255, 255, 255, 0.8) !important;
 }
 
+/* Light Theme - Ensure all text is readable */
+body.light-theme .container p,
+body.light-theme .container h3,
+body.light-theme .container h4,
+body.light-theme .container span {
+  color: #1a1a2e !important;
+}
+
+body.light-theme .container p a {
+  color: #667eea !important;
+}
+
 /* Light Theme - About Section */
 body.light-theme .about .content h3 {
   color: #1a1a2e !important;
@@ -163,6 +175,17 @@ body.light-theme .skills .skill-name {
 }
 
 /* Light Theme - Portfolio */
+body.light-theme .portfolio {
+  background: transparent !important;
+  padding-top: 0 !important;
+  padding-bottom: 80px !important;
+  margin-bottom: 60px !important;
+}
+
+body.light-theme .portfolio .container {
+  background: transparent !important;
+}
+
 body.light-theme .portfolio #portfolio-flters li {
   color: #4a5568 !important;
   background: rgba(102, 126, 234, 0.1);
@@ -175,7 +198,10 @@ body.light-theme .portfolio #portfolio-flters li.filter-active {
 }
 
 body.light-theme .project-title-below {
-  color: #1a1a2e !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Light Theme - Contact Section */
@@ -439,8 +465,29 @@ body.light-theme .experience-item .experience-description p {
 }
 
 /* Light Theme - Interests Section */
+body.light-theme .interests .icon-box {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
 body.light-theme .interests .icon-box h3 {
   color: #1a1a2e !important;
+}
+
+body.light-theme .interests .icon-box i {
+  opacity: 0.9;
+}
+
+body.light-theme .interests .icon-box:hover {
+  background: rgba(102, 126, 234, 0.1) !important;
+}
+
+/* Light Theme - Portfolio Project Titles */
+body.light-theme .project-title-below {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Light Theme - Card 3D Elements */

@@ -406,5 +406,149 @@
   console.log('%c🚀 Futuristic Portfolio Initialized! ', 'background: #FDCD57; color: #000; font-size: 20px; padding: 10px;');
   console.log('%cTry the Konami Code: ↑ ↑ ↓ ↓ ← → ← → B A', 'color: #FDCD57; font-size: 14px;');
 
+  // ========================================
+  // ANALYTICS EVENT TRACKING
+  // ========================================
+
+  // Helper function to safely send Google Analytics events
+  function trackEvent(eventName, eventParams) {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', eventName, eventParams);
+      console.log('%c📊 Event tracked: ' + eventName, 'color: #4CAF50; font-weight: bold;', eventParams);
+    }
+  }
+
+  // Track Portfolio Project Clicks
+  document.querySelectorAll('.portfolio-item a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const projectTitle = this.getAttribute('title') || 'Unknown Project';
+      const projectURL = this.getAttribute('href');
+
+      trackEvent('project_interaction', {
+        'event_category': 'Portfolio',
+        'event_label': projectTitle,
+        'project_url': projectURL
+      });
+    });
+  });
+
+  // Track Resume Download Button
+  const resumeBtn = document.getElementById('download-resume-btn');
+  if (resumeBtn) {
+    resumeBtn.addEventListener('click', function() {
+      trackEvent('resume_click', {
+        'event_category': 'Engagement',
+        'event_label': 'LinkedIn Resume View'
+      });
+    });
+  }
+
+  // Track GitHub Profile Button
+  const githubBtn = document.getElementById('github-profile-btn');
+  if (githubBtn) {
+    githubBtn.addEventListener('click', function() {
+      trackEvent('github_profile_click', {
+        'event_category': 'Social',
+        'event_label': 'GitHub Profile'
+      });
+    });
+  }
+
+  // Track Social Media Clicks
+  document.querySelectorAll('.social-links a').forEach(link => {
+    link.addEventListener('click', function() {
+      const platform = this.classList.contains('linkedin') ? 'LinkedIn' :
+                      this.classList.contains('github') ? 'GitHub' :
+                      this.classList.contains('google') ? 'Email' : 'Other';
+
+      trackEvent('social_media_click', {
+        'event_category': 'Social',
+        'event_label': platform
+      });
+    });
+  });
+
+  // Track Navigation Menu Clicks
+  document.querySelectorAll('.nav-menu a, .mobile-nav a').forEach(link => {
+    link.addEventListener('click', function() {
+      const sectionName = this.textContent.trim();
+
+      trackEvent('navigation_click', {
+        'event_category': 'Navigation',
+        'event_label': sectionName
+      });
+    });
+  });
+
+  // Track External Link Clicks
+  document.querySelectorAll('a[target="_blank"]').forEach(link => {
+    link.addEventListener('click', function() {
+      const linkURL = this.getAttribute('href');
+
+      trackEvent('external_link_click', {
+        'event_category': 'Outbound',
+        'event_label': linkURL
+      });
+    });
+  });
+
+  // Track Theme Toggle
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function() {
+      const newTheme = body.classList.contains('light-theme') ? 'Dark' : 'Light';
+
+      trackEvent('theme_change', {
+        'event_category': 'User Preference',
+        'event_label': newTheme
+      });
+    });
+  }
+
+  // Track Scroll Depth
+  let scrollDepth = {
+    25: false,
+    50: false,
+    75: false,
+    100: false
+  };
+
+  window.addEventListener('scroll', function() {
+    const scrollPercentage = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+
+    Object.keys(scrollDepth).forEach(depth => {
+      if (scrollPercentage >= depth && !scrollDepth[depth]) {
+        scrollDepth[depth] = true;
+
+        trackEvent('scroll_depth', {
+          'event_category': 'Engagement',
+          'event_label': depth + '%'
+        });
+      }
+    });
+  });
+
+  // Track Time on Page
+  let pageStartTime = new Date().getTime();
+
+  window.addEventListener('beforeunload', function() {
+    const timeOnPage = Math.round((new Date().getTime() - pageStartTime) / 1000);
+
+    trackEvent('time_on_page', {
+      'event_category': 'Engagement',
+      'event_label': 'Total Seconds',
+      'value': timeOnPage
+    });
+  });
+
+  // Track Page Visibility Changes (Tab switching)
+  document.addEventListener('visibilitychange', function() {
+    trackEvent('page_visibility', {
+      'event_category': 'Engagement',
+      'event_label': document.hidden ? 'Hidden' : 'Visible'
+    });
+  });
+
+  console.log('%c✅ Analytics Event Tracking Enabled', 'background: #4CAF50; color: #fff; padding: 5px; font-weight: bold;');
+
 })();
 
